@@ -4,15 +4,29 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Example Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| This is an example for your website routes
+| Delete or Comment it if you don't need it
+| Created by : Mirza Qamaruzzaman (https://github.com/zaazxz)
 |
 */
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dashboard', function () {
+    return view('backend.index');
+});
+
+/*
+|--------------------------------------------------------------------------
+| Your Custom Web Routes
+|--------------------------------------------------------------------------
+|
+| You can add your custom routes here
+| Include your custom API, Controllers, etc.
+|
+*/

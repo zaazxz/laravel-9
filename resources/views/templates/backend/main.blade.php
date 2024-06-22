@@ -13,6 +13,8 @@
     {{-- CSS Libraries --}}
     <link rel="stylesheet" href="{{ asset('library/jqvmap/dist/jqvmap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('library/summernote/dist/summernote-bs4.css') }}">
+    <link rel="stylesheet" href="{{ asset('library/weathericons/css/weather-icons.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('library/weathericons/css/weather-icons-wind.min.css') }}">
     <link rel="stylesheet" href="{{ asset('library/owl.carousel/dist/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('library/owl.carousel/dist/assets/owl.theme.default.min.css') }}">
 
@@ -68,6 +70,7 @@
     <script src="{{ asset('assets/js/stisla.js') }}"></script>
 
     {{-- JS Libraries --}}
+    <script src="{{ asset('library/simpleweather/jquery.simpleWeather.min.js') }}"></script>
     <script src="{{ asset('library/jquery-sparkline/jquery.sparkline.min.js') }}"></script>
     <script src="{{ asset('library/chart.js/dist/Chart.min.js') }}"></script>
     <script src="{{ asset('library/owl.carousel/dist/owl.carousel.min.js') }}"></script>
@@ -80,6 +83,7 @@
 
     {{-- Page Specific JS Files --}}
     <script src="{{ asset('assets/js/page/index.js') }}"></script>
+    <script src="{{ asset('assets/js/page/index-0.js') }}"></script>
 
 </body>
 

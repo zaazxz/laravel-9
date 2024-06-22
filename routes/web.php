@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('backend.index');
-});
+Route::get('/dashboard', [ViewController::class, 'dashboardIndex'])->name('dashboard.index');
+Route::get('/dashboard/ecommerce', [ViewController::class, 'dashboardEcommerce'])->name('dashboard.ecommerce');
 
 /*
 |--------------------------------------------------------------------------
